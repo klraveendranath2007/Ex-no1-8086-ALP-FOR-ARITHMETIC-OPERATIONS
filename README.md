@@ -24,7 +24,7 @@ Personal Computer with MASM Software
 
 
 #### FLOW CHART
-<img width="377" height="622" alt="image" src="https://github.com/user-attachments/assets/bd33a0c3-7a78-4c35-9c80-93dab8bae111" />
+<img width="377" height="522" alt="image" src="https://github.com/user-attachments/assets/bd33a0c3-7a78-4c35-9c80-93dab8bae111" />
 
 #### PROGRAM
 
@@ -80,7 +80,7 @@ END
 
 #### FLOWCHART
 
-<img width="377" height="584" alt="image" src="https://github.com/user-attachments/assets/fec934e1-7f2b-4b6e-bd8a-2b0b6a80ef52" />
+<img width="377" height="484" alt="image" src="https://github.com/user-attachments/assets/fec934e1-7f2b-4b6e-bd8a-2b0b6a80ef52" />
 
 #### PROGRAM
 ```asm
