@@ -45,7 +45,7 @@ JNC L1
 INC CL
 L1:MOV SI,1200H
 MOV [SI],AX
-MOV [SI+2],CL
+MOV [SI+02],CL
 MOV AH,4CH
 INT 21H
 CODE ENDS
@@ -67,6 +67,7 @@ END
 ---
 
 ## OUTPUT IMAGE FROM MASM SOFTWARE
+<img width="540" height="300" alt="debug_000" src="https://github.com/user-attachments/assets/3bbca00c-6660-43b1-be90-9012327f1f2c" />
 
 ## 2. SUBTRACTION
 
@@ -88,16 +89,14 @@ END
 CODE SEGMENT
 ASSUME CS: CODE, DS: CODE
 ORG 1000H
-MOV SI,2000H
-MOV CL,00H
-MOV AX,[SI]
-MOV BX,[SI+02H]
+MOV AX,1234H
+MOV BX,1234H
 SUB AX,BX
-JNC L1
+JNC DOWN
 INC CL
-L1:
-MOV [SI+04H],AX
-MOV [SI+06H],CL
+DOWN: MOV SI,1200H
+MOV [SI],AX
+MOV [SI+2],CL
 MOV AH,4CH
 INT 21H
 CODE ENDS
@@ -119,6 +118,7 @@ END
 
 
 ## OUTPUT SCREEN FROM MASM SOFTWARE
+<img width="540" height="300" alt="debug_001" src="https://github.com/user-attachments/assets/ff730153-68b5-4301-a2f2-b78d75d9fa5f" />
 
 ## 3. MULTIPLICATION
 
@@ -141,13 +141,13 @@ END
 CODE SEGMENT
 ASSUME CS: CODE, DS: CODE
 ORG 1000H
-MOV SI,2000H
 MOV DX,0000H
-MOV AX,[SI]
-MOV BX,[SI+02H]
+MOV AX,1234H
+MOV BX,1234H
 MUL BX
-MOV [SI+04H],AX
-MOV [SI+06H],DX
+MOV SI,1200H
+L1: MOV[SI],AX
+MOV [SI+02H],DX
 MOV AH,4CH
 INT 21H
 CODE ENDS
@@ -167,6 +167,7 @@ END
 ---
 
 ## OUTPUT SCREEN FROM MASM SOFTWARE
+<img width="540" height="300" alt="debug_002" src="https://github.com/user-attachments/assets/7e96f009-f4ea-450c-b76f-f6841372e3e4" />
 
 ## 4. DIVISION
 
@@ -184,15 +185,15 @@ END
 
 ```asm
 CODE SEGMENT
-ASSUME CS: CODE, DS: CODE
+ASSUME CS:CODE,DS:CODE
 ORG 1000H
-MOV SI,2000H
 MOV DX,0000H
-MOV AX,[SI]
-MOV BX,[SI+02H]
+MOV AX,1234H
+MOV BX,1234H
 DIV BX
-MOV [SI+04H],AX
-MOV [SI+06H],DX
+MOV SI,1200H
+MOV [SI],AX
+MOV [SI+02H],DX
 MOV AH,4CH
 INT 21H
 CODE ENDS
@@ -211,6 +212,7 @@ END
 
 ---
 ## OUTPUT FROM MASM SOFTWARE
+<img width="540" height="300" alt="debug_003" src="https://github.com/user-attachments/assets/a17eb401-a191-46d1-bec8-86c19aa0b160" />
 
 
 
