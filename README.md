@@ -1,20 +1,18 @@
-## 8086 Assembly Language Programs for Arithmetic Operations
+## 8086 ASSEMBLY LANGUAGE PROGRAM FOR ARITHMETIC OPERATIONS
 
 ### AIM
 
 To write and execute Assembly Language Programs to perform arithmetic operations for the 8086 microprocessor.
 
----
+
 
 ### APPARATUS REQUIRED
 
-* Personal Computer with MASM Software
-
----
+Personal Computer with MASM Software
 
 ### 1. ADDITION
 
-#### Algorithm
+#### ALGORITHM
 
 1.Initialize registers and memory.    
 2.Load two 16-bit numbers into AX and BX.  
@@ -26,10 +24,9 @@ To write and execute Assembly Language Programs to perform arithmetic operations
 
 
 #### FLOW CHART
-<img width="707" height="1024" alt="image" src="https://github.com/user-attachments/assets/b5a7062d-e294-47cd-9683-a40de25e82de" />
+<img width="377" height="622" alt="image" src="https://github.com/user-attachments/assets/bd33a0c3-7a78-4c35-9c80-93dab8bae111" />
 
-
-#### Program
+#### PROGRAM
 
 ```asm
 CODE SEGMENT
@@ -50,7 +47,7 @@ CODE ENDS
 END
 ```
 
-#### Output Table
+#### OUTPUT TABLE
 
 | MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
 | ----------------------- | ------------------------ |
@@ -60,8 +57,8 @@ END
 |      1203 : 34          |                          |  
 
 
-#### Manual Calculations
-<img width="200" height="314" alt="image" src="https://github.com/user-attachments/assets/b54341ba-f56c-479b-b081-416fc9ef4932" />
+#### MANUAL CALCULATION
+<img width="250" height="254" alt="image" src="https://github.com/user-attachments/assets/b54341ba-f56c-479b-b081-416fc9ef4932" />
 
 
 ---
@@ -71,7 +68,7 @@ END
 
 ### 2. SUBTRACTION
 
-#### Algorithm
+#### ALGORITHM
 
 1.Initialize registers and memory.  
 2.Load two 16-bit numbers into AX and BX.  
@@ -83,10 +80,9 @@ END
 
 #### FLOWCHART
 
-<img width="578" height="797" alt="image" src="https://github.com/user-attachments/assets/564c3c7a-33ce-4a1c-8920-beb5c24b9b47" />
+<img width="377" height="584" alt="image" src="https://github.com/user-attachments/assets/fec934e1-7f2b-4b6e-bd8a-2b0b6a80ef52" />
 
-
-#### Program
+#### PROGRAM
 ```asm
 CODE SEGMENT
 ASSUME CS: CODE, DS: CODE
@@ -106,7 +102,7 @@ END
 ```
 
 
-#### Output Table
+#### OUTPUT TABLE
 
 | MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
 | ----------------------- | ------------------------ |
@@ -116,9 +112,9 @@ END
 |      1203 : 34          |                          |  
 
 
-#### Manual Calculations
+#### MANUAL CALCULATION
 
-<img width="209" height="315" alt="image" src="https://github.com/user-attachments/assets/b1eefd8e-017e-4545-9979-a51891011699" />
+<img width="209" height="201" alt="image" src="https://github.com/user-attachments/assets/b1eefd8e-017e-4545-9979-a51891011699" />
 
 ---
 
@@ -128,7 +124,7 @@ END
 
 ### 3. MULTIPLICATION
 
-#### Algorithm
+#### ALGORITHM
 
 1.Initialize registers and memory.  
 2.Clear the DX register to store the higher-order result.  
@@ -141,11 +137,10 @@ END
 
 #### FLOWCHART
 
-<img width="569" height="906" alt="image" src="https://github.com/user-attachments/assets/88be88ff-2896-4a88-b73d-84ccffd2fcf9" />
+<img width="323" height="539" alt="image" src="https://github.com/user-attachments/assets/6f111bbb-d1b2-4723-8f1d-a6b88d011a79" />
 
 
-
-#### Program
+#### PROGRAM
 
 ```asm
 CODE SEGMENT
@@ -164,7 +159,7 @@ CODE ENDS
 END
 ```
 
-#### Output Table
+#### OUTPUT TABLE
 
 | MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
 | ----------------------- | ------------------------ |
@@ -173,9 +168,9 @@ END
 |      1202 : 12          |        1206 : 4B         |
 |      1203 : 34          |        1207 : 01         | 
 
-#### Manual Calculations
+#### MANUAL CALCULATION
 
-<img width="299" height="408" alt="image" src="https://github.com/user-attachments/assets/c8cb5fba-9636-45e4-ae65-677a3b5c757c" />
+<img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/c8cb5fba-9636-45e4-ae65-677a3b5c757c" />
 
 
 ---
@@ -185,7 +180,7 @@ END
 
 ### 4. DIVISION
 
-#### Algorithm
+#### ALGORITHM
 
 1.Initialize registers and memory.  
 2.Clear the DX register.  
@@ -197,10 +192,9 @@ END
 8.Stop execution.  
 
 #### FLOWCHART
-<img width="1065" height="802" alt="image" src="https://github.com/user-attachments/assets/25b4a483-0d42-494b-8639-1af3ea17191b" />
+<img width="255" height="280" alt="image" src="https://github.com/user-attachments/assets/b96a307e-4799-485f-a28f-20f2a5dbe3b1" />
 
-
-#### Program
+#### PROGRAM
 
 ```asm
 CODE SEGMENT
@@ -219,7 +213,7 @@ CODE ENDS
 END
 ```
 
-#### Output Table
+#### OUTPUT TABLE
 
 | MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
 | ----------------------- | ------------------------ |
@@ -230,8 +224,8 @@ END
 
 
 
-#### Manual Calculations
-<img width="209" height="300" alt="image" src="https://github.com/user-attachments/assets/6fdf7457-4d7d-4a82-8719-dbc57b8f930d" />
+#### MANUAL CALCULATION
+<img width="200" height="250" alt="image" src="https://github.com/user-attachments/assets/6fdf7457-4d7d-4a82-8719-dbc57b8f930d" />
 
 
 
